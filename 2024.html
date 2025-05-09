@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cagayan Animal Bites Cases</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-light">
+
+    <!-- Header -->
+    <header class="py-3 bg-dark">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <i class='bx bx-sidebar text-light' type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#sidebarId"></i>
+
+                <div class="text-end">
+                    <a href="index.html" class="btn btn-sm btn-success d-flex align-items-center gap-2"><i
+                            class='bx bx-arrow-back fs-6'></i>Back to Home Page</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section class="bg-dark">
+            <div class="container py-5">
+                <div class="row align-items-center">
+                    <div class="col-md-6 mb-4">
+                        <h1 class="text-center text-light fw-bold">Animal Bite Cases <span class="text-success">Year
+                                2024</span>
+                        </h1>
+                        <div class="text-center">
+                            <a href="#age" class="btn btn-sm btn-outline-secondary my-1">Age</a>
+                            <a href="#sex" class="btn btn-sm btn-outline-secondary my-1">Sex</a>
+                            <a href="#bitingAnimal" class="btn btn-sm btn-outline-secondary my-1">Biting Animal</a>
+                            <a href="#humanCase" class="btn btn-sm btn-outline-secondary my-1">Human Case</a>
+                            <a href="#post" class="btn btn-sm btn-outline-secondary my-1">Post Exposure Prophylaxis</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="assets/Cagayan Map.png" alt="Cagayan Map" class="d-block w-100">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map Section -->
+        <section class="bg-light">
+            <div class="container py-3">
+                <p class="text-center w-75 mx-auto desc">
+                    Below are the maps and their data showing the distribution of animal bite cases:
+                    <strong>Age</strong>,
+                    <strong>Sex</strong>, <strong>Biting Animal</strong>, <strong>Human Case</strong>, and <strong>Post
+                        Exposure
+                        Prophylaxis</strong>.
+                </p>
+
+                <!-- Age table -->
+                <div class="row border rounded" style="background-color: #fff;" id="age">
+                    <h4 class="text-center bg-success text-light rounded py-1 fw-bold">Age</h4>
+                    <div class="col-lg-7 mb-2">
+                        <img src="assets/2024 Age.jpeg" alt="" class="d-block w-100">
+                    </div>
+                    <div class="col-lg-5">
+                        <table class="table table-sm table-striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col" class="fst-italic">Municipalities</th>
+                                    <th scope="col" class="fst-italic">Below 15</th>
+                                    <th scope="col" class="fst-italic">15 Above</th>
+                                    <th scope="col" class="fst-italic">Total</th>
+                                </tr>
+                            </thead>
+                            <tbody class="table-group-divider">
+                                <tr><th>Abulug</th><td>0</td><td>0</td><td>0</td></tr>
+                                <tr><th>Alcala</th><td>0</td><td>0</td><td>0</td></tr>
+                                <tr><th>Allacapan</th><td>0</td><td>0</td><td>0</td></tr>
+                                <tr><th>Amulung</th><td>0</td><td>0</td><td>0</td></tr>
+                                <tr><th>Aparri</th><td>48</td><td>118</td><td>166</td></tr>
+                                <tr><th>Baggao</th><td>1745</td><td>1975</td><td>3720</td></tr>
+                                <tr><th>Ballesteros</th><td>992</td><td>1455</td><td>2447</td></tr>
+                                <tr><th>Buguey</th><td>0</td><td>0</td><td>0</td></tr>
+                                <tr><th>Calayan</th><td>36</td><td>83</td><td>119</td></tr>
+                                <tr><th>Camalaniugan</th><td>0</td><td>0</td><td>0</td></tr>
+                                <tr><th>Claveria</th><td>891</td><td>1011</td><td>1902</td></tr>
+                                <tr><th>Enrile</th><td>0</td><td>0</td><td>0</td></tr>
+                                <tr><th>Gattaran</th><td>943</td><td>1453</td><td>2396</td></tr>
+                                <tr><th>Gonzaga</th><td>457</td><td>463</td><td>920</td></tr>
+                                <tr><th>Iguig</th><td>0</td><td>0</td><td>0</td></tr>
+                                <tr><th>Lal-lo</th><td>17</td><td>46</td><td>63</td></tr>
+                                <tr><th>Lasam</th><td>0</td><td>0</td><td>0</td></tr>
+                                <tr><th>Pamplona</th><td>0</td><td>0</td><td>0</td></tr>
+                                <tr><th>Peñablanca</th><td>0</td><td>0</td><td>0</td></tr>
+                                <tr><th>Piat</th><td>0</td><td>0</td><td>0</td></tr>
+                                <tr><th>Rizal</th><td>0</td><td>0</td><td>0</td></tr>
+                                <tr><th>Sanchez-Mira</th><td>0</td><td>0</td><td>0</td></tr>
+                                <tr><th>Sta. Ana</th><td>0</td><td>0</td><td>0</td></tr>
+                                <tr><th>Sta. Praxedes</th><td>114</td><td>169</td><td>283</td></tr>
+                                <tr><th>Sta. Teresita</th><td>869</td><td>653</td><td>1522</td></tr>
+                                <tr><th>Sto. Niño (Faire)</th><td>0</td><td>0</td><td>0</td></tr>
+                                <tr><th>Solana</th><td>335</td><td>661</td><td>996</td></tr>
+                                <tr><th>Tuao</th><td>329</td><td>582</td><td>911</td></tr>
+                                <tr><th>Tuguegarao</th><td>7808</td><td>6909</td><td>14717</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <br>
+
+                <!-- Sex table-->
+                <div class="row border rounded" style="background-color: #fff;" id="sex">
+                    <h4 class="text-center bg-success text-light rounded py-1 fw-bold">Sex</h4>
+                    <div class="col-lg-7 mb-2">
+                        <img src="assets/2024 Sex.jpeg" alt="" class="d-block w-100">
+                    </div>
+                    <div class="col-lg-5">
+                        <table class="table table-sm table-striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col" class="fst-italic">Municipalities</th>
+                                    <th scope="col" class="fst-italic">Male</th>
+                                    <th scope="col" class="fst-italic">Female</th>
+                                    <th scope="col" class="fst-italic">Total</th>
+                                </tr>
+                            </thead>
+                            <tbody class="table-group-divider">
+                                <tr><th>Abulug</th><td>0</td><td>0</td><td>0</td></tr>
+                                <tr><th>Alcala</th><td>0</td><td>0</td><td>0</td></tr>
+                                <tr><th>Allacapan</th><td>0</td><td>0</td><td>0</td></tr>
+                                <tr><th>Amulung</th><td>0</td><td>0</td><td>0</td></tr>
+                                <tr><th>Aparri</th><td>86</td><td>71</td><td>157</td></tr>
+                                <tr><th>Baggao</th><td>1876</td><td>1844</td><td>3720</td></tr>
+                                <tr><th>Ballesteros</th><td>1083</td><td>1364</td><td>2447</td></tr>
+                                <tr><th>Buguey</th><td>0</td><td>0</td><td>0</td></tr>
+                                <tr><th>Calayan</th><td>55</td><td>64</td><td>119</td></tr>
+                                <tr><th>Camalaniugan</th><td>0</td><td>0</td><td>0</td></tr>
+                                <tr><th>Claveria</th><td>728</td><td>1174</td><td>1902</td></tr>
+                                <tr><th>Enrile</th><td>0</td><td>0</td><td>0</td></tr>
+                                <tr><th>Gattaran</th><td>1128</td><td>1268</td><td>2396</td></tr>
+                                <tr><th>Gonzaga</th><td>485</td><td>435</td><td>920</td></tr>
+                                <tr><th>Iguig</th><td>0</td><td>0</td><td>0</td></tr>
+                                <tr><th>Lal-lo</th><td>26</td><td>43</td><td>69</td></tr>
+                                <tr><th>Lasam</th><td>0</td><td>0</td><td>0</td></tr>
+                                <tr><th>Pamplona</th><td>0</td><td>0</td><td>0</td></tr>
+                                <tr><th>Peñablanca</th><td>0</td><td>0</td><td>0</td></tr>
+                                <tr><th>Piat</th><td>0</td><td>0</td><td>0</td></tr>
+                                <tr><th>Rizal</th><td>0</td><td>0</td><td>0</td></tr>
+                                <tr><th>Sanchez-Mira</th><td>0</td><td>0</td><td>0</td></tr>
+                                <tr><th>Sta. Ana</th><td>0</td><td>0</td><td>0</td></tr>
+                                <tr><th>Sta. Praxedes</th><td>91</td><td>186</td><td>277</td></tr>
+                                <tr><th>Sta. Teresita</th><td>736</td><td>786</td><td>1522</td></tr>
+                                <tr><th>Sto. Niño (Faire)</th><td>0</td><td>0</td><td>0</td></tr>
+                                <tr><th>Solana</th><td>476</td><td>520</td><td>996</td></tr>
+                                <tr><th>Tuao</th><td>473</td><td>438</td><td>911</td></tr>
+                                <tr><th>Tuguegarao</th><td>6817</td><td>7909</td><td>14726</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <br>
+
+                <!-- Biting Animal table -->
+                <div class="row border rounded" style="background-color: #fff;" id="bitingAnimal">
+                    <h4 class="text-center bg-success text-light rounded py-1 fw-bold">Biting Animal</h4>
+                    <div class="col-lg-7 mb-2">
+                        <img src="assets/2024 Biting Animal.jpeg" alt="" class="d-block w-100">
+                    </div>
+                    <div class="col-lg-5">
+                        <table class="table table-sm table-striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col" class="fst-italic">Municipalities</th>
+                                    <th scope="col" class="fst-italic">Dog</th>
+                                    <th scope="col" class="fst-italic">Cat</th>
+                                    <th scope="col" class="fst-italic">Other</th>
+                                    <th scope="col" class="fst-italic">Total</th>
+                                </tr>
+                            </thead>
+                            <tbody class="table-group-divider">
+                                <tr><th>Abulug</th><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                                <tr><th>Alcala</th><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                                <tr><th>Allacapan</th><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                                <tr><th>Amulung</th><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                                <tr><th>Aparri</th><td>147</td><td>22</td><td>0</td><td>169</td></tr>
+                                <tr><th>Baggao</th><td>2322</td><td>1357</td><td>41</td><td>3720</td></tr>
+                                <tr><th>Ballesteros</th><td>1741</td><td>695</td><td>11</td><td>2447</td></tr>
+                                <tr><th>Buguey</th><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                                <tr><th>Calayan</th><td>84</td><td>29</td><td>6</td><td>119</td></tr>
+                                <tr><th>Camalaniugan</th><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                                <tr><th>Claveria</th><td>1300</td><td>591</td><td>1</td><td>1892</td></tr>
+                                <tr><th>Enrile</th><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                                <tr><th>Iguig</th><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                                <tr><th>Gattaran</th><td>1506</td><td>870</td><td>20</td><td>2396</td></tr>
+                                <tr><th>Gonzaga</th><td>744</td><td>175</td><td>1</td><td>920</td></tr>
+                                <tr><th>Lal-lo</th><td>39</td><td>29</td><td>1</td><td>69</td></tr>
+                                <tr><th>Lasam</th><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                                <tr><th>Pamplona</th><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                                <tr><th>Peñablanca</th><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                                <tr><th>Piat</th><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                                <tr><th>Rizal</th><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                                <tr><th>Sanchez-Mira</th><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                                <tr><th>Sta. Ana</th><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                                <tr><th>Sta. Praxedes</th><td>159</td><td>114</td><td>5</td><td>278</td></tr>
+                                <tr><th>Sta. Teresita</th><td>1204</td><td>318</td><td>0</td><td>1522</td></tr>
+                                <tr><th>Sto. Niño (Faire)</th><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                                <tr><th>Solana</th><td>634</td><td>359</td><td>3</td><td>996</td></tr>
+                                <tr><th>Tuao</th><td>639</td><td>250</td><td>21</td><td>910</td></tr>
+                                <tr><th>Tuguegarao</th><td>9155</td><td>5512</td><td>57</td><td>14724</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <br>
+
+                <!-- Human Case table -->
+                <div class="row border rounded" style="background-color: #fff;" id="humanCase">
+                    <h4 class="text-center bg-success text-light rounded py-1 fw-bold">Human Case</h4>
+                    <div class="col-lg-7 mb-2">
+                        <img src="assets/2024 Human Case.jpeg" alt="" class="d-block w-100">
+                    </div>
+                    <div class="col-lg-5 table-responsive">
+                        <table class="table table-sm table-striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col" class="fst-italic">Municipalities</th>
+                                    <th scope="col" class="fst-italic">Category1</th>
+                                    <th scope="col" class="fst-italic">Category2</th>
+                                    <th scope="col" class="fst-italic">Category3</th>
+                                    <th scope="col" class="fst-italic">Human Rabies</th>
+                                    <th scope="col" class="fst-italic">Total</th>
+                                </tr>
+                            </thead>
+                            <tbody class="table-group-divider">
+                                <tr><th>Abulug</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                                <tr><th>Alcala</th><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td></tr>
+                                <tr><th>Allacapan</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                                <tr><th>Amulung</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                                <tr><th>Aparri</th><td>0</td><td>132</td><td>24</td><td>0</td><td>156</td></tr>
+                                <tr><th>Baggao</th><td>1207</td><td>2160</td><td>353</td><td>0</td><td>3720</td></tr>
+                                <tr><th>Ballesteros</th><td>0</td><td>2316</td><td>131</td><td>0</td><td>2447</td></tr>
+                                <tr><th>Buguey</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                                <tr><th>Calayan</th><td>0</td><td>59</td><td>60</td><td>0</td><td>119</td></tr>
+                                <tr><th>Camalaniugan</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                                <tr><th>Claveria</th><td>12</td><td>1770</td><td>122</td><td>0</td><td>1904</td></tr>
+                                <tr><th>Enrile</th><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td></tr>
+                                <tr><th>Gattaran</th><td>891</td><td>1044</td><td>245</td><td>0</td><td>2180</td></tr>
+                                <tr><th>Gonzaga</th><td>0</td><td>806</td><td>114</td><td>0</td><td>920</td></tr>
+                                <tr><th>Iguig</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                                <tr><th>Lal-lo</th><td>0</td><td>60</td><td>9</td><td>0</td><td>69</td></tr>
+                                <tr><th>Lasam</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                                <tr><th>Pamplona</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                                <tr><th>Peñablanca</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                                <tr><th>Piat</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                                <tr><th>Rizal</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                                <tr><th>Sanchez-Mira</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                                <tr><th>Sta. Ana</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                                <tr><th>Sta. Praxedes</th><td>16</td><td>167</td><td>94</td><td>0</td><td>277</td></tr>
+                                <tr><th>Sta. Teresita</th><td>0</td><td>1366</td><td>156</td><td>0</td><td>1522</td></tr>
+                                <tr><th>Sto. Niño (Faire)</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                                <tr><th>Solana</th><td>0</td><td>865</td><td>131</td><td>1</td><td>997</td></tr>
+                                <tr><th>Tuao</th><td>15</td><td>370</td><td>526</td><td>1</td><td>912</td></tr>
+                                <tr><th>Tuguegarao</th><td>53</td><td>11251</td><td>3637</td><td>1</td><td>14942</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <br>
+
+                <!-- Post Exposure Prophylaxis table -->
+                <div class="row border rounded" style="background-color: #fff;" id="post">
+                    <h4 class="text-center bg-success text-light rounded py-1 fw-bold">Post Exposure Prophylaxis</h4>
+                    <div class="col-lg-7 mb-2">
+                        <img src="assets/2024 Post Exposure.jpeg" alt="" class="d-block w-100">
+                    </div>
+                    <div class="col-lg-5 table-responsive">
+                        <table class="table table-sm table-striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col" class="fst-italic">Municipalities</th>
+                                    <th scope="col" class="fst-italic">TCV</th>
+                                    <th scope="col" class="fst-italic">HRIG</th>
+                                    <th scope="col" class="fst-italic">ERIG</th>
+                                    <th scope="col" class="fst-italic">Total</th>
+                                </tr>
+                            </thead>
+                            <tbody class="table-group-divider">
+                                <tr><th>Abulug</th><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                                <tr><th>Alcala</th><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                                <tr><th>Allacapan</th><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                                <tr><th>Amulung</th><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                                <tr><th>Aparri</th><td>157</td><td>0</td><td>24</td><td>181</td></tr>
+                                <tr><th>Baggao</th><td>1740</td><td>0</td><td>339</td><td>2079</td></tr>
+                                <tr><th>Ballesteros</th><td>2447</td><td>0</td><td>131</td><td>2578</td></tr>
+                                <tr><th>Buguey</th><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                                <tr><th>Calayan</th><td>119</td><td>0</td><td>41</td><td>160</td></tr>
+                                <tr><th>Camalaniugan</th><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                                <tr><th>Claveria</th><td>1900</td><td>0</td><td>100</td><td>2000</td></tr>
+                                <tr><th>Enrile</th><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                                <tr><th>Gattaran</th><td>645</td><td>0</td><td>67</td><td>712</td></tr>
+                                <tr><th>Gonzaga</th><td>920</td><td>0</td><td>114</td><td>1034</td></tr>
+                                <tr><th>Iguig</th><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                                <tr><th>Lal-lo</th><td>68</td><td>0</td><td>8</td><td>76</td></tr>
+                                <tr><th>Lasam</th><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                                <tr><th>Pamplona</th><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                                <tr><th>Peñablanca</th><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                                <tr><th>Piat</th><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                                <tr><th>Rizal</th><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                                <tr><th>Sanchez-Mira</th><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                                <tr><th>Santa Ana</th><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                                <tr><th>Santa Praxedes</th><td>210</td><td>0</td><td>92</td><td>302</td></tr>
+                                <tr><th>Santa Teresita</th><td>1104</td><td>0</td><td>145</td><td>1249</td></tr>
+                                <tr><th>Santo Niño (Faire)</th><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                                <tr><th>Solana</th><td>947</td><td>0</td><td>129</td><td>1076</td></tr>
+                                <tr><th>Tuao</th><td>911</td><td>0</td><td>526</td><td>1437</td></tr>
+                                <tr><th>Tuguegarao City (Capital)</th><td>12453</td><td>0</td><td>2869</td><td>15322</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Points Map Section -->
+        <section class="mb-3">
+         <div class="container py-3" style="background-color: #fff;">
+           <div class="row align-items-center">
+             <div class="col-lg-7">
+               <p class="fst-italic text-center text-lg-start fw-semibold">This map shows the distribution of reported animal bite cases across the province for the year 2020. Each red dot represents a single recorded incident within a specific municipality.</p>
+             </div>
+             <div class="col-lg-5">
+               <img src="assets/Points 2024.jpeg" alt="" class="w-100 d-block mb-2 points-map">
+               <button type="button" class="btn btn-success d-block w-100" data-bs-toggle="modal" data-bs-target="#modalId">View</button>
+             </div>
+           </div>
+         </div>
+        </section>
+    </main>
+
+    <footer class="text-center bg-dark py-3">
+        <div class="container">
+            <small class="mb-1 text-secondary">&copy; 2025 Cagayan Province Bite Cases Mapping System</small>
+            <br>
+            <small class="text-light">For Academic & Research Purposes Only</small>
+        </div>
+    </footer>
+
+    <!-- Sidebar -->
+    <div class="offcanvas offcanvas-start bg-dark" tabindex="-1" id="sidebarId">
+        <div class="mt-3 text-end pe-3">
+            <i class='text-light bx bx-window-close' type="button" data-bs-dismiss="offcanvas"></i>
+        </div>
+        <div class="offcanvas-body">
+            <h5 class="offcanvas-title text-light fw-bold">Cagayan Animal Bite Cases</h5>
+            <div class="btn-group mt-3">
+                <button type="button" class="btn btn-success dropdown-toggle fw-semibold" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Select Year
+                </button>
+                <ul class="dropdown-menu" data-bs-theme="dark">
+                    <li><a class="dropdown-item fw-semibold" href="2020.html">2020</a></li>
+                    <li><a class="dropdown-item fw-semibold" href="2021.html">2021</a></li>
+                    <li><a class="dropdown-item fw-semibold" href="2022.html">2022</a></li>
+                    <li><a class="dropdown-item fw-semibold" href="2023.html">2023</a></li>
+                    <li><a class="dropdown-item fw-semibold" href="2024.html">2024</a></li>
+                </ul>
+            </div>
+            <a href="vaccination-sites.html" class="btn btn-success fw-semibold mt-3">Vaccination Sites</a>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalId" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img src="assets/Points 2024.jpeg" alt="" class="w-100 d-block">
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

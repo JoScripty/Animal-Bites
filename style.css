@@ -37,6 +37,12 @@ th, td{
     font-size: 12px;
 }
 
+.points-map{
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+}
+
 @media (min-width: 992px) {
     .home-title{
         width: 75%;
